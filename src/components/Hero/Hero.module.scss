@@ -1,0 +1,96 @@
+@import '../../variables.scss';
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+
+  .leftH {
+    display: flex;
+    flex: 3;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+    padding-top: 1.5rem;
+
+    .theBestAd {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: start;
+      width: fit-content;
+      margin-top: 4rem;
+      padding: 20px 13px;
+      color: white;
+      text-transform: uppercase;
+      background-color: $grayMedium;
+      border-radius: 4rem;
+
+      & > span {
+        z-index: 2;
+      }
+
+      & > div {
+        position: absolute;
+        left: 8px;
+        z-index: 1;
+        width: 5.4rem;
+        height: 80%;
+        background-color: $orange;
+        border-radius: 3rem;
+      }
+    }
+
+    .heroText {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      color: white;
+      font-weight: bold;
+      font-size: 4.5rem;
+      text-transform: uppercase;
+      text-overflow: inherit;
+
+      & > div:first-child > span:first-child {
+        @include title-text;
+      }
+
+      & > div:nth-of-type(3) {
+        width: 80%;
+        font-weight: 200;
+        font-size: 1rem;
+        letter-spacing: 1px;
+        text-transform: none;
+      }
+    }
+
+    .figures {
+      display: flex;
+      gap: 2rem;
+
+      & > div {
+        display: flex;
+        flex-direction: column;
+
+        & > span:nth-of-type(1) {
+          color: white;
+          font-size: 2rem;
+        }
+
+        & > span:nth-of-type(2) {
+          color: $gray;
+          text-transform: uppercase;
+        }
+      }
+    }
+
+    .heroButtons {
+      display: flex;
+      gap: 1rem;
+      font-weight: normal;
+    }
+  }
+
+  .rightH {
+    flex: 1;
+  }
+}

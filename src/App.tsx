@@ -1,9 +1,10 @@
 import styles from './App.module.scss';
+import { Hero } from './components';
 
 function App() {
   return (
     <div className={styles.App}>
-      <span style={{ color: 'white' }}>dsfsdfsdfsdf</span>
+      <Hero />
     </div>
   );
 }
