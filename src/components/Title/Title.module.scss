@@ -1,0 +1,16 @@
+@import '../../variables.scss';
+
+.title {
+  display: flex;
+  gap: 5rem;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  font-size: 3rem;
+  font-style: italic;
+  text-transform: uppercase;
+
+  & > span:not(:nth-child(2)) {
+    @include title-text;
+  }
+}

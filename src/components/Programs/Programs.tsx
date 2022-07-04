@@ -1,3 +1,4 @@
+import { Title } from '..';
 import RightArrow from '../../assets/rightArrow.png';
 import { programsData } from '../../data/programsData';
 import styles from './Programs.module.scss';
@@ -6,11 +7,7 @@ import { IProgramsProps } from './Programs.props';
 function Programs(props: IProgramsProps) {
   return (
     <div className={styles.programs} id="programs">
-      <div className={styles.programsHeader}>
-        <span>Explore our</span>
-        <span>Programs</span>
-        <span>to shape you</span>
-      </div>
+      <Title text={['Explore our', 'Programs', 'to shape you']} />
 
       <div className={styles.programCategories}>
         {programsData.map((program) => (
