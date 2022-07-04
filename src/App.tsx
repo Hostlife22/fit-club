@@ -1,10 +1,11 @@
 import styles from './App.module.scss';
-import { Hero } from './components';
+import { Hero, Programs } from './components';
 
 function App() {
   return (
     <div className={styles.App}>
       <Hero />
+      <Programs />
     </div>
   );
 }
