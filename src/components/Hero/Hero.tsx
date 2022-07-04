@@ -1,4 +1,8 @@
 import { Button, Header } from '..';
+import Calories from '../../assets/calories.png';
+import Heart from '../../assets/heart.png';
+import HeroImage from '../../assets/hero_image.png';
+import HeroImageBack from '../../assets/hero_image_back.png';
 import styles from './Hero.module.scss';
 import { IHeroProps } from './Hero.props';
 
@@ -49,7 +53,27 @@ function Hero(props: IHeroProps) {
           <Button appearance="ghost">Learn More</Button>
         </div>
       </div>
-      <div className={styles.rightH}>right side</div>
+
+      <div className={styles.rightH}>
+        <Button>Join Now</Button>
+
+        <div className={styles.heartRate}>
+          <img src={Heart} alt="heart" />
+          <span>Heart Rate</span>
+          <span>116 bpm</span>
+        </div>
+
+        <img src={HeroImage} alt="heroImage" className={styles.heroImage} />
+        <img src={HeroImageBack} alt="heroImage back" className={styles.heroImageBack} />
+
+        <div className={styles.calories}>
+          <img src={Calories} alt="calories" />
+          <div>
+            <span>Calories Burned</span>
+            <span>220 kcal</span>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
