@@ -1,0 +1,84 @@
+@import '../../variables.scss';
+
+.testimonials {
+  display: flex;
+  gap: 1rem;
+  padding: 0 2rem;
+
+  .leftT {
+    display: flex;
+    flex: 1 1;
+    flex-direction: column;
+    gap: 2rem;
+    color: white;
+    text-transform: uppercase;
+
+    & > :nth-child(1) {
+      color: $orange;
+      font-weight: bold;
+    }
+
+    & > :nth-child(2),
+    & > :nth-child(3) {
+      font-weight: bold;
+      font-size: 3rem;
+    }
+
+    & > :nth-child(4) {
+      line-height: 40px;
+      letter-spacing: 2px;
+      text-align: justify;
+      text-transform: none;
+    }
+
+    & > span:nth-of-type(2) {
+      @include title-text;
+    }
+  }
+
+  .rightT {
+    position: relative;
+    flex: 1;
+
+    & > img {
+      position: absolute;
+      top: 2rem;
+      right: 8rem;
+      width: 17rem;
+      height: 20rem;
+      object-fit: cover;
+    }
+
+    & > :nth-child(1) {
+      position: absolute;
+      top: 0.9rem;
+      right: 9rem;
+      width: 17rem;
+      height: 20rem;
+      background-color: transparent;
+      border: 2px solid $orange;
+    }
+
+    & > :nth-child(2) {
+      position: absolute;
+      top: 4rem;
+      right: 7rem;
+      width: 17rem;
+      height: 19rem;
+      background: $planCard;
+    }
+
+    .arrows {
+      position: absolute;
+      bottom: 1rem;
+      left: 3rem;
+      display: flex;
+      gap: 1rem;
+
+      & > img {
+        width: 1.5rem;
+        cursor: pointer;
+      }
+    }
+  }
+}
