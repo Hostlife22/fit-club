@@ -1,0 +1,30 @@
+@import '../../variables.scss';
+
+.footerContainer {
+  position: relative;
+
+  & > hr {
+    border: 1px solid $lightgray;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    align-items: center;
+    justify-content: center;
+    height: 20rem;
+    padding: 1rem 2rem;
+
+    & > .socialLinks {
+      display: flex;
+      gap: 4rem;
+
+      & > img {
+        width: 2rem;
+        height: 2rem;
+        cursor: pointer;
+      }
+    }
+  }
+}
