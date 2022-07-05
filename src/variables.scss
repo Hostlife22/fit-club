@@ -13,3 +13,11 @@ $grayMedium: #363d42;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: white;
 }
+
+@mixin blur {
+  position: absolute;
+  z-index: -9;
+  background: rgb(253 120 43 / 69%);
+  border-radius: 50%;
+  filter: blur(150px);
+}

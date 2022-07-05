@@ -9,6 +9,7 @@ import { IHeroProps } from './Hero.props';
 function Hero(props: IHeroProps) {
   return (
     <div className={styles.hero}>
+      <div className={styles.blur} />
       <div className={styles.leftH}>
         <Header />
 

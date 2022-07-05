@@ -7,6 +7,8 @@ import { IPlansProps } from './Plans.props';
 function Plans(props: IPlansProps) {
   return (
     <div className={styles.plansContainer} id="plans">
+      <div className={styles.blurOne} />
+      <div className={styles.blurTwo} />
       <Title text={['Ready to start', 'Your journey', 'Now withus']} style={{ gap: '2rem' }} />
 
       <div className={styles.plans}>

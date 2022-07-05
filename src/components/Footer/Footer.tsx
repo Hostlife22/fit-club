@@ -19,6 +19,8 @@ function Footer(props: IFooterProps) {
           <img src={Logo} alt="Logo" />
         </div>
       </div>
+      <div className={styles.blurOne} />
+      <div className={styles.blurTwo} />
     </div>
   );
 }

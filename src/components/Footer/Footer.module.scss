@@ -16,6 +16,10 @@
     height: 20rem;
     padding: 1rem 2rem;
 
+    & > .logoF > img {
+      width: 10rem;
+    }
+
     & > .socialLinks {
       display: flex;
       gap: 4rem;
@@ -26,5 +30,25 @@
         cursor: pointer;
       }
     }
+  }
+
+  .blurOne,
+  .blurTwo {
+    @include blur;
+
+    bottom: 0;
+    width: 26rem;
+    height: 12rem;
+    filter: blur(200px);
+  }
+
+  .blurOne {
+    right: 15%;
+    background: red;
+  }
+
+  .blurTwo {
+    left: 15%;
+    background: rgb(255 115 0);
   }
 }
