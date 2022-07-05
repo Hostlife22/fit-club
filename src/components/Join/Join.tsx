@@ -15,7 +15,7 @@ function Join(props: IJoinProps) {
         .sendForm('service_ml0djte', 'template_wkt8ttc', formRef.current, 'b7IKRAe3D4lM6UqL5')
         .then(
           (result) => {
-            console.log(result.text);
+            formRef.current && formRef.current.reset();
           },
           (error) => {
             console.log(error.text);

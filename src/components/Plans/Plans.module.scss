@@ -32,6 +32,10 @@
     align-items: center;
     justify-content: center;
 
+    @include for-phone {
+      flex-direction: column;
+    }
+
     .plan {
       display: flex;
       flex-direction: column;
@@ -44,6 +48,10 @@
       &:nth-child(2) {
         background: $planCard;
         transform: scale(1.1);
+
+        @include for-phone {
+          transform: none;
+        }
 
         & > svg {
           fill: white;

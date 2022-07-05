@@ -4,12 +4,20 @@
   display: flex;
   justify-content: space-between;
 
+  @include for-phone {
+    flex-direction: column;
+  }
+
   .blur {
     @include blur;
 
     left: 0;
     width: 22rem;
     height: 30rem;
+
+    @include for-phone {
+      width: 14rem;
+    }
   }
 
   .leftH {
@@ -32,6 +40,13 @@
       text-transform: uppercase;
       background-color: $grayMedium;
       border-radius: 4rem;
+
+      @include for-phone {
+        align-self: center;
+        margin-top: 0;
+        font-size: small;
+        transform: scale(0.8);
+      }
 
       & > span {
         z-index: 2;
@@ -58,6 +73,12 @@
       text-transform: uppercase;
       text-overflow: inherit;
 
+      @include for-phone {
+        align-items: center;
+        justify-content: center;
+        font-size: xx-large;
+      }
+
       & > div:first-child > span:first-child {
         @include title-text;
       }
@@ -68,6 +89,13 @@
         font-size: 1rem;
         letter-spacing: 1px;
         text-transform: none;
+
+        @include for-phone {
+          font-weight: 200;
+          font-size: small;
+          letter-spacing: 1px;
+          text-align: center;
+        }
       }
     }
 
@@ -82,11 +110,19 @@
         & > span:nth-of-type(1) {
           color: white;
           font-size: 2rem;
+
+          @include for-phone {
+            font-size: large;
+          }
         }
 
         & > span:nth-of-type(2) {
           color: $gray;
           text-transform: uppercase;
+
+          @include for-phone {
+            font-size: small;
+          }
         }
       }
     }
@@ -95,6 +131,10 @@
       display: flex;
       gap: 1rem;
       font-weight: normal;
+
+      @include for-phone {
+        justify-content: center;
+      }
     }
   }
 
@@ -102,6 +142,10 @@
     position: relative;
     flex: 1;
     background-color: $orange;
+
+    @include for-phone {
+      background: none;
+    }
 
     & > button {
       position: absolute;
@@ -123,6 +167,11 @@
       background-color: $darkGrey;
       border-radius: 5px;
 
+      @include for-phone {
+        top: 2rem;
+        left: 1rem;
+      }
+
       & > img {
         width: 2rem;
       }
@@ -142,6 +191,14 @@
       top: 10rem;
       right: 8rem;
       width: 23rem;
+
+      @include for-phone {
+        position: relative;
+        top: 4rem;
+        left: 7rem;
+        align-self: center;
+        width: 15rem;
+      }
     }
 
     .heroImageBack {
@@ -150,6 +207,12 @@
       right: 20rem;
       z-index: -1;
       width: 15rem;
+
+      @include for-phone {
+        top: 0;
+        left: 2rem;
+        width: 15rem;
+      }
     }
 
     .calories {
@@ -163,8 +226,18 @@
       background-color: $caloryCard;
       border-radius: 5px;
 
+      @include for-phone {
+        position: relative;
+        top: 5rem;
+        left: 2rem;
+      }
+
       & > img {
         width: 3rem;
+
+        @include for-phone {
+          width: 2rem;
+        }
       }
 
       & > div {
@@ -179,6 +252,11 @@
         & > :nth-child(2) {
           color: white;
           font-size: 1.5rem;
+
+          @include for-phone {
+            color: white;
+            font-size: 1rem;
+          }
         }
       }
     }

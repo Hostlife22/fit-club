@@ -11,14 +11,14 @@ import { IReasonsProps } from './Reasons.props';
 
 function Reasons(props: IReasonsProps) {
   return (
-    <div className={styles.reasons} id="reasons">
+    <div className={styles.reasons}>
       <div className={styles.leftR}>
         <img src={image1} alt="img" />
         <img src={image2} alt="img" />
         <img src={image3} alt="img" />
         <img src={image4} alt="img" />
       </div>
-      <div className={styles.rightR}>
+      <div className={styles.rightR} id="reasons">
         <span>some reasons</span>
         <div>
           <span>why</span>
