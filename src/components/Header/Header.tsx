@@ -20,7 +20,9 @@ function Header(props: IHeaderProps) {
     <div className={styles.header}>
       <img src={Logo} className={styles.logo} alt="the fit club" />
       {mobile && (
-        <div className={cn({ [styles.open]: menuOpened })} onClick={() => setMenuOpened(true)}>
+        <div
+          className={cn({ [styles.open]: menuOpened })}
+          onClick={() => setMenuOpened((prev) => !prev)}>
           <span />
         </div>
       )}
