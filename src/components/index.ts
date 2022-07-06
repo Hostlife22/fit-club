@@ -8,3 +8,4 @@ export { default as Programs } from './Programs/Programs';
 export { default as Reasons } from './Reasons/Reasons';
 export { default as Testimonials } from './Testimonials/Testimonials';
 export { default as Title } from './Title/Title';
+export { default as Up } from './Up/Up';

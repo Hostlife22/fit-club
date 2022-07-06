@@ -22,6 +22,14 @@ $grayMedium: #363d42;
   filter: blur(150px);
 }
 
+@mixin for-phone-small {
+  @media (max-width: 425px) { @content; }
+}
+
 @mixin for-phone {
   @media (max-width: 768px) { @content; }
+}
+
+@mixin for-desctop {
+  @media (max-width: 1220px) { @content; }
 }

@@ -1,5 +1,5 @@
 import styles from './App.module.scss';
-import { Footer, Hero, Join, Plans, Programs, Reasons, Testimonials } from './components';
+import { Footer, Hero, Join, Plans, Programs, Reasons, Testimonials, Up } from './components';
 
 function App() {
   return (
@@ -11,6 +11,7 @@ function App() {
       <Testimonials />
       <Join />
       <Footer />
+      <Up />
     </div>
   );
 }

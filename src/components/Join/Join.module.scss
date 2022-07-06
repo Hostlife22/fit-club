@@ -17,6 +17,10 @@
     font-size: 3rem;
     text-transform: uppercase;
 
+    @include for-desctop {
+      font-size: 2rem;
+    }
+
     @include for-phone {
       flex-direction: column;
       font-size: xx-large;
